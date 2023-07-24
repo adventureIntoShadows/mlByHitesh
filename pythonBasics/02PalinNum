@@ -1,0 +1,23 @@
+# palindrome of a number
+# first how do you obtain the reverse of a number
+
+# step1: save our number in a safe place
+# step2: use a while loop
+# step2.1: obtain the last number by using modulus operator
+
+
+num = int(input("enter the number that you want to check as palindrone: "))
+
+temp = num
+
+reverse = 0
+
+while num > 0:
+    singelDigit = num % 10
+    reverse = reverse * 10 + singelDigit
+    num = num // 10
+
+if (temp == reverse):
+    print("your number is a palindrome")
+else:
+    print("not a palindrome")
